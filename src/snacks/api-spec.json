@@ -1,0 +1,26 @@
+{
+	"openapi": "3.1.0",
+	"info": {
+		"title": "Tasty Snacks",
+		"summary": "Get, create and delete snacks",
+		"description": "Everything you need to do with snacks, you can do here"
+	},
+	"paths": {
+		"/snacks": {
+			"get": {
+				"description": "Returns all snacks in an array"
+			},
+			"post": {
+				"description": "Creates a snack-object and pushes it onto the array"
+			}
+		},
+		"/snacks/:id": {
+			"get": {
+				"description": "Returns a snack with the specified id"
+			},
+			"delete": {
+				"description": "Removes the snack-object with the specified id from the array"
+			}
+		}
+	}
+}
